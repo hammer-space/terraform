@@ -7,7 +7,7 @@ Deployments in virtual environments use a Hammerspace OVA. The OVA is provided
 by Hammerspace.
 
 ## VMware vSphere
-[High Availability](Deployment/VMware%20vSphere/High%20Availability/README.md)
+[High Availability](Deployment/VMware%20vSphere/High%20Availability/)
 deployment
 Standalone deployment
 
