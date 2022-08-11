@@ -6,6 +6,10 @@ deployments.
 Deployments in virtual environments use a Hammerspace OVA. The OVA is provided
 by Hammerspace.
 
+## VMware vSphere
+[High Availability](Deployment/VMware vSphere/High Availability/) deployment
+Standalone deployment
+
 For deployments in Azure, please see the following link for now:
 
 https://github.com/Azure/Avere/tree/main/src/terraform/examples/hammerspace
