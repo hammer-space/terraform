@@ -1,5 +1,4 @@
-# terraform
-Terraform automation examples
+# Terraform automation examples
 
 Hammerspace can be deployed using Terraform for both on-premises and cloud
 deployments.
