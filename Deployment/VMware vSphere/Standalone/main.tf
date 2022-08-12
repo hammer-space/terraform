@@ -143,6 +143,14 @@ resource "vsphere_virtual_machine" "anvil_vm" {
               "ens160": {
                  "ips": ["${var.anvil-ip}"],
                  "mtu": 1500
+            },
+            "ens192": {
+                "roles": [],
+                "dhcp": false
+            },
+            "ens224": {
+                "roles": [],
+                "dhcp": false
             }
       }
      }
