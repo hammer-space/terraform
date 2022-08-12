@@ -65,11 +65,13 @@ variable "network-data2" {
   description = "VMware production network 2"
   default     = null
 }
-
+# Note that the OVA requires this network to be set to an existing network
+# It can be safely set to the same network as network-data1 as the interface
+# it not configured after deployment 
 variable "network-ha1" {
   type        = string
   description = "VMware production HA network 1"
-  default     = "<HA network name>"
+  default     = "<Prod/Management network name>"
 }
 
 #=================================== #
