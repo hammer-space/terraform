@@ -67,7 +67,7 @@ variable "network-data2" {
 }
 # Note that the OVA requires this network to be set to an existing network
 # It can be safely set to the same network as network-data1 as the interface
-# it not configured after deployment 
+# it not configured after deployment
 variable "network-ha1" {
   type        = string
   description = "VMware production HA network 1"
@@ -130,28 +130,28 @@ variable "hammerspace-ova-url" {
 variable "anvil-cpu" {
   type = number
   description = "CPU count for Anvil"
-  default = 16
+  default = 48
 }
 
 # Please see the installation guide for sizing recommendations
 variable "anvil-mem" {
   type = number
   description = "Amount of memory for Anvil"
-  default = 32768
+  default = 131072
 }
 
 # Please see the installation guide for sizing recommendations
 variable "anvil-bootdisk" {
   type = number
   description = "Anvil boot disk (GB)"
-  default = 200
+  default = 400
 }
 
 # Please see the installation guide for sizing recommendations
 variable "anvil-metadatadisk" {
   type = number
   description = "Metadata disk (GB)"
-  default = 300
+  default = 4096
 }
 
 # Anvil 1 settings
@@ -172,7 +172,7 @@ variable "anvil-hostname" {
 variable "dsx-count" {
   type = number
   description = "Number of DSX nodes"
-  default = 1
+  default = 4
 }
 
 variable "dsx-ips" {
@@ -187,14 +187,14 @@ variable "dsx-ips" {
 variable "DSX-cpu" {
   type = number
   description = "Amount of CPU for DSX"
-  default = 2
+  default = 16
 }
 
 # Please see the installation guide for sizing recommendations
 variable "DSX-mem" {
   type = number
   description = "Amount of memory for DSX"
-  default = 16384
+  default = 65536
 }
 variable "DSX-bootdisk" {
   type = number
@@ -206,7 +206,7 @@ variable "DSX-bootdisk" {
 variable "DSX-datadisk" {
   type = number
   description = "DSX data disk (GB)"
-  default = 200
+  default = 1024
 }
 #=============================== #
 # Global virtual machine details #
