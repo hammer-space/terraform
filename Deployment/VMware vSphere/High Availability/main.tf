@@ -129,7 +129,7 @@ resource "vsphere_virtual_machine" "anvil1_vm" {
             "ipv4_default": "${var.default-gateway}"
         },
         "computer_name": ${var.cluster-name},
-        "password": ${var.admin-password}
+        "password": "${var.admin-password}"
       },
       "nodes": {
         0: {
@@ -238,7 +238,7 @@ resource "vsphere_virtual_machine" "anvil2_vm" {
             "ipv4_default": "${var.default-gateway}"
         },
         "computer_name": ${var.cluster-name},
-        "password": ${var.admin-password}
+        "password": "${var.admin-password}"
       },
       "nodes": {
         0: {
@@ -343,7 +343,7 @@ resource "vsphere_virtual_machine" "dsx_vm" {
         "gateway": {
             "ipv4_default": "${var.default-gateway}"
         },
-        "password": ${var.admin-password}
+        "password": "${var.admin-password}"
       },
       "node": {
         "add_volumes": true,
