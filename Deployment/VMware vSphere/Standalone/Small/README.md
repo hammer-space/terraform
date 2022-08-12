@@ -11,7 +11,7 @@ Approximate usage recommendations:
 Settings for Anvil and DSX
 
 **Anvil**
-```
+``` `#RRGGBB`
 - CPU: 8 cores
 - Memory: 20 GB
 - Metadata disk: 200 GB
