@@ -9,13 +9,14 @@ Approximate usage recommendations:
 - Up to 20 million files
 
 Settings for Anvil and DSX
-Anvil
+
+**Anvil**
 ```
 - CPU: 8 cores
 - Memory: 20 GB
 - Metadata disk: 200 GB
 ```
-DSX
+**DSX**
 ```
 - CPU: 2 cores
 - Memory: 8 GB
