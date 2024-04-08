@@ -11,6 +11,8 @@ by Hammerspace.
 
 [Standalone](Deployment/VMware%20vSphere/Standalone/) deployment
 
+Be sure to create a variables file infrastructure.tfvars with the details for your infrastructure
+
 For deployments in Azure, please see the following link:
 
 https://github.com/Azure/Avere/tree/main/src/terraform/examples/hammerspace

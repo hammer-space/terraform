@@ -11,7 +11,6 @@ variable "vsphere-user" {
 variable "vsphere-password" {
   type        = string
   description = "VMWare vSphere admin user password"
-  default     = "<password>"
 # Turn on for production use. Will hide the entire custom variable entry
 #  sensitive   = true
 }
@@ -19,44 +18,37 @@ variable "vsphere-password" {
 variable "vsphere-server" {
   type        = string
   description = "VMWare vCenter FQDN or IP address"
-  default     = "<vCenter address>"
 }
 
 variable "vsphere-datacenter" {
   type        = string
   description = "VMWare vSphere Datacenter"
-  default     = "<Datacenter>"
 }
 variable "vsphere-resource-pool" {
   type        = string
   description = "VMWare Resource Pool"
-  default     = "<Select a resource pool>"
 }
 
 # Not currently used for the examples
 variable "vsphere-cluster" {
   type        = string
   description = "VMWare vSphere cluster."
-  default     = "<Cluster name>"
 }
 
 variable "vsphere-host" {
   type        = string
   description = "VMWare host"
-  default     = "<ESX host to deploy on>"
 }
 
 # Optional
 variable "vsphere-template-folder" {
   type        = string
   description = "Template folder"
-  default     = "/<Path to >/Templates"
 }
 
 variable "network-data1" {
   type        = string
   description = "VMware production network 1"
-  default     = "<Prod/Management network name>"
 }
 
 # Only needs to be used when separating management traffic
@@ -71,7 +63,6 @@ variable "network-data2" {
 variable "network-ha1" {
   type        = string
   description = "VMware production HA network 1"
-  default     = "<Prod/Management network name>"
 }
 
 #=================================== #
@@ -87,25 +78,21 @@ variable "ntp-servers" {
 variable "dns-servers" {
   type = string
   description = "DNS server list"
-  default = "<Comma separated list of DNS servers>"
 }
 
 variable "default-gateway" {
   type = string
   description = "Default gateway"
-  default = "<default gateway>"
 }
 variable "admin-password" {
   type        = string
   description = "Password for Hammerspace admin user"
-  default     = "<password>"
 #  sensitive  = true
 }
 
 variable "cluster-name" {
   type        = string
   description = "Site, Cluster and SMB Server name"
-  default     = "<Hammerspace cluster name>"
 }
 
 variable "hammerspace-vm-guest-id" {
@@ -123,7 +110,6 @@ variable "hammerspace-template-name" {
 variable "hammerspace-ova-url" {
   type        = string
   description = "Hammerspace OVA url"
-  default     = "<path to Hammerspace OVA>"
 }
 
 # Please see the installation guide for sizing recommendations
@@ -157,14 +143,12 @@ variable "anvil-metadatadisk" {
 # Anvil 1 settings
 variable "anvil-ip" {
   type = string
-  description = "Host IP address for Anvil"
-  default = "<IP/NETMASK, i.e. 192.168.1.1/22>"
+  description ="<IP/NETMASK, i.e. 192.168.1.1/22>
 }
 
 variable "anvil-hostname" {
   type = string
-  description = "Hostname for Anvil"
-  default = "<hostname, i.e. tf-anvil1>"
+  description = "<hostname, i.e. tf-anvil1>"
 }
 
 # DSX
@@ -179,7 +163,7 @@ variable "dsx-ips" {
   type        = map(any)
   description = "List of IPs used for the DSX nodes"
   default = {
-    "0" = "<IP/NETMASK, i.e. 192.168.1.4/22>"
+    "0" = "192.168.1.4/22>"
   }
 }
 
@@ -215,23 +199,19 @@ variable "DSX-datadisk" {
 variable "vm-domain" {
   type        = string
   description = "Linux virtual machine domain name for the machine"
-  default     = "<Domain name>"
 }
 
 variable "prefix" {
   type        = string
   description = "Prefix for vm name and DSX hostname"
-  default = "<string prefix, i.e. tf"
 }
 
 variable "vm-folder" {
   type = string
   description = "Folder where the provisioned VM will go"
-  default = "/<ESX Folder>/"
 }
 
 variable "vm-datastore" {
   type        = string
   description = "Datastore used for all of the virtual machines"
-  default     = "<Selected datastore>"
 }
