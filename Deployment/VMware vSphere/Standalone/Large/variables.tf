@@ -11,8 +11,7 @@ variable "vsphere-user" {
 variable "vsphere-password" {
   type        = string
   description = "VMWare vSphere admin user password"
-# Turn on for production use. Will hide the entire custom variable entry
-#  sensitive   = true
+  sensitive   = true
 }
 
 variable "vsphere-server" {
@@ -77,7 +76,7 @@ variable "ntp-servers" {
 
 variable "dns-servers" {
   type = string
-  description = "DNS server list"
+  description = "Comma separated list of DNS servers"
 }
 
 variable "default-gateway" {
@@ -143,12 +142,12 @@ variable "anvil-metadatadisk" {
 # Anvil 1 settings
 variable "anvil-ip" {
   type = string
-  description ="<IP/NETMASK, i.e. 192.168.1.1/22>
+  description ="IP/NETMASK, e.g. 192.168.1.1/22
 }
 
 variable "anvil-hostname" {
   type = string
-  description = "<hostname, i.e. tf-anvil1>"
+  description = "Hostname, e.g. tf-anvil1"
 }
 
 # DSX
@@ -163,7 +162,7 @@ variable "dsx-ips" {
   type        = map(any)
   description = "List of IPs used for the DSX nodes"
   default = {
-    "0" = "192.168.1.4/22>"
+    "0" = "192.168.1.4/22"
   }
 }
 
@@ -203,7 +202,7 @@ variable "vm-domain" {
 
 variable "prefix" {
   type        = string
-  description = "Prefix for vm name and DSX hostname"
+  description = "Prefix for VMs"
 }
 
 variable "vm-folder" {

@@ -10,8 +10,7 @@ variable "vsphere-user" {
 variable "vsphere-password" {
   type        = string
   description = "VMWare vSphere admin user password"
-# Turn on for production use. Will hide the entire custom variable entry
-#  sensitive   = true
+  sensitive   = true
 }
 
 variable "vsphere-server" {
@@ -74,7 +73,7 @@ variable "ntp-servers" {
 
 variable "dns-servers" {
   type = string
-  description = "DNS server list"
+  description = "Comma separated list of DNS servers"
 }
 
 variable "default-gateway" {
@@ -94,7 +93,7 @@ variable "cluster-name" {
 
 variable "cluster-ip" {
   type    = string
-  description = "management IP, i.e. 192.168.1.3"
+  description = "management IP, e.g. 192.168.1.3"
 }
 
 variable "hammerspace-vm-guest-id" {
@@ -145,7 +144,7 @@ variable "HA-anvil-metadatadisk" {
 # Anvil 1 settings
 variable "HA_anvil1-ip" {
   type = string
-  description = "IP/NETMASK, i.e. 192.168.1.1/22"
+  description = "IP/NETMASK, e.g. 192.168.1.1/22"
 }
 
 variable "HA-anvil1-hostname" {
@@ -157,7 +156,7 @@ variable "HA-anvil1-hostname" {
 # Anvil 2 settings
 variable "HA_anvil2-ip" {
   type = string
-  description = "IP/NETMASK, i.e. 192.168.1.2/22"
+  description = "IP/NETMASK, e.g. 192.168.1.2/22"
 }
 
 variable "HA-anvil2-hostname" {
@@ -178,8 +177,8 @@ variable "dsx-ips" {
   type        = map(any)
   description = "Map of IPs to use for the DSX nodes"
   default = {
-    "0" = "192.168.1.4/22>",
-    "1" = "192.168.1.5/22>"
+    "0" = "192.168.1.4/22",
+    "1" = "192.168.1.5/22"
   }
 }
 
@@ -219,7 +218,7 @@ variable "vm-domain" {
 
 variable "prefix" {
   type        = string
-  description = "Prefix for vm name and DSX hostname. Example: first-last-setup01"
+  description = "Prefix for VMs. Example: first-last-setup01"
 }
 
 variable "vm-folder" {
