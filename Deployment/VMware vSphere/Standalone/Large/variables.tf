@@ -142,7 +142,7 @@ variable "anvil-metadatadisk" {
 # Anvil 1 settings
 variable "anvil-ip" {
   type = string
-  description ="IP/NETMASK, e.g. 192.168.1.1/22
+  description ="IP/NETMASK, e.g. 192.168.1.1/22"
 }
 
 variable "anvil-hostname" {
