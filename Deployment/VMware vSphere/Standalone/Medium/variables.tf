@@ -85,7 +85,7 @@ variable "default-gateway" {
 variable "admin-password" {
   type        = string
   description = "Password for Hammerspace admin user"
-#  sensitive  = true
+  sensitive  = true
 }
 
 variable "cluster-name" {
