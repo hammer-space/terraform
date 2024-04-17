@@ -28,6 +28,7 @@ variable "vsphere-datacenter" {
 variable "vsphere-resource-pool" {
   type        = string
   description = "VMWare Resource Pool"
+  default = "Resources"
 }
 
 variable "vsphere-host" {
