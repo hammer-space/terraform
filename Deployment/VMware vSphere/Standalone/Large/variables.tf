@@ -30,12 +30,6 @@ variable "vsphere-resource-pool" {
   description = "VMWare Resource Pool"
 }
 
-# Not used in the examples, but leaving it here in case it's needed.
-variable "vsphere-cluster" {
-  type        = string
-  description = "VMWare vSphere cluster."
-}
-
 variable "vsphere-host" {
   type        = string
   description = "VMWare host"
