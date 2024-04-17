@@ -1,2 +1,5 @@
 infrastructure.tfvars
 .terraform*
+terraform.tfstate*
+*.ova
+.idea

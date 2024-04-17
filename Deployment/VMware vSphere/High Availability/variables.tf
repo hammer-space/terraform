@@ -22,15 +22,12 @@ variable "vsphere-datacenter" {
   type        = string
   description = "VMWare vSphere Datacenter"
 }
+
+# By default, vsphere has a resource pool called "Resources" on each cluster and host.
 variable "vsphere-resource-pool" {
   type        = string
   description = "VMWare Resource Pool"
-}
-
-# Not currently used for the examples
-variable "vsphere-cluster" {
-  type        = string
-  description = "VMWare vSphere cluster."
+  default     = "Resources"
 }
 
 variable "vsphere-host" {
@@ -106,6 +103,11 @@ variable "hammerspace-template-name" {
   type        = string
   description = "Hammerspace template name"
   default     = null
+}
+
+variable "hammerspace-ova-path" {
+  type        = string
+  description = "Hammerspace OVA path"
 }
 
 variable "hammerspace-ova-url" {

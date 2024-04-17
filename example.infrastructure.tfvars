@@ -6,8 +6,6 @@ vsphere-password = ""
 vsphere-datacenter      = "example_datacenter"
 vsphere-host            = "esxi-example-host01"
 vsphere-template-folder = "/path/to/templates"
-vsphere-cluster         = "example-cluster"
-vsphere-resource-pool   = "example-resource-pool"
 
 vm-datastore = "esxi-example-host01-disk01"
 

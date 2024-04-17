@@ -23,15 +23,12 @@ variable "vsphere-datacenter" {
   type        = string
   description = "VMWare vSphere Datacenter"
 }
+
+# By default, vsphere has a resource pool called "Resources" on each cluster and host.
 variable "vsphere-resource-pool" {
   type        = string
   description = "VMWare Resource Pool"
-}
-
-# Not currently used for the examples
-variable "vsphere-cluster" {
-  type        = string
-  description = "VMWare vSphere cluster."
+  default = "Resources"
 }
 
 variable "vsphere-host" {
